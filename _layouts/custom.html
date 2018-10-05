@@ -1,0 +1,15 @@
+---
+layout: "post"
+staticVar: "Nice!"
+---
+
+<div>
+    <!-- from _config file -->
+    <div>
+        {{ site.email }}
+        this is post - {{ layout.staticVar }}<br />
+        {% include fragment.html bindVar = "green" %}
+    </div>
+    <p style="color: blueviolet; border: solid;">{{ page.categories }}</p>
+    {{ content }}
+</div>
